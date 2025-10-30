@@ -3,7 +3,7 @@ function demo_unlimited_rpca_fixedT_smallN()
 rng(0);
 
 %% -------- 0) User params (edit here) --------
-T      = 0.25;     % total duration [s] (fixed)
+T      = 0.09;     % total duration [s] (fixed)
 fs0    = 7000;       % baseline sampling rate [Hz]
 lambda = 1;        % folding threshold ([-lambda, lambda])
 
@@ -103,7 +103,7 @@ else
 end
 
 %% -------- 3) Sweep fs with fixed T (N varies, even if N<40) --------
-fs_min = 240; fs_max = 1e4; npts = 100;
+fs_min = 240; fs_max = 2e4; npts = 200;
 fs_vec = round(logspace(log10(fs_min), log10(fs_max), npts));
 
 err_rel = nan(size(fs_vec));
