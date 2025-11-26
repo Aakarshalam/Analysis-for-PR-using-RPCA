@@ -434,4 +434,5 @@ function [x, meta] = make_signal(t, P, fs)
     if any(strcmpi(P.type, {'fm','chirp'}))
         meta.r_est = [];
     end
-end
+    end
+end 

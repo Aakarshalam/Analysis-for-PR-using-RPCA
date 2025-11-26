@@ -24,7 +24,7 @@ PCA_KEEP_VAR_FRAC = [];     % e.g., 0.99 for 99% variance (set [] if using K)
 % ----- Noise controls -----
 ADD_NOISE     = true;      % toggle noise on/off
 NOISE_MODE    = "snr";     % "snr" or "sigma"
-SNR_dB        = 10;        % used if NOISE_MODE="snr": target SNR of noisy low-rate samples
+SNR_dB        = 5;        % used if NOISE_MODE="snr": target SNR of noisy low-rate samples
 NOISE_SIGMA   = 0.15;      % used if NOISE_MODE="sigma": additive white Gaussian std
 NOISE_SEED    = 123;       % set [] for non-deterministic; otherwise reproducible
 

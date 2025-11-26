@@ -3,8 +3,8 @@ function demo_unlimited_rpca_fixedT()
 rng(0);
 
 %% -------- 0) User params (edit here) --------
-T   = 0.0085;            % total signal duration [s] (fixed)
-fs0 = 4000;           % baseline sampling rate for visualization [Hz]
+T   = 0.02;            % total signal duration [s] (fixed)
+fs0 = 7000;           % baseline sampling rate for visualization [Hz]
 lambda = 1.5;         % folding threshold (range [-lambda, lambda])
 % ----- choose a signal -----
 A1 = 2.0;  f1 = 120;  phi1 = 0.30*pi;
